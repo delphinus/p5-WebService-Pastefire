@@ -1,0 +1,22 @@
+# NAME
+
+WebService::Pastefire -
+
+# SYNOPSIS
+
+    use WebService::Pastefire;
+
+# DESCRIPTION
+
+WebService::Pastefire is
+
+# AUTHOR
+
+JINNOUCHI Yasushi <delphinus@remora.cx>
+
+# SEE ALSO
+
+# LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
