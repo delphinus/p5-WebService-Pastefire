@@ -7,6 +7,8 @@ readme_pod_from 'lib/WebService/Pastefire.pm';
 githubmeta;
 
 requires 'Class::Accessor::Fast';
+requires 'LWP::Simple';
+requires 'LWP::Protocol::https';
 
 tests 't/*.t';
 author_tests 'xt';

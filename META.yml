@@ -21,7 +21,10 @@ no_index:
     - xt
 requires:
   Class::Accessor::Fast: 0
+  LWP::Protocol::https: 0
+  LWP::Simple: 0
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
+  repository: origin
 version: 0.01
