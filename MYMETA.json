@@ -4,7 +4,7 @@
       "JINNOUCHI Yasushi <delphinus@remora.cx>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.112150",
    "license" : [
       "perl_5"
    ],
@@ -28,11 +28,12 @@
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.36"
+            "ExtUtils::MakeMaker" : "6.59"
          }
       },
       "runtime" : {
          "requires" : {
+            "Class::Accessor::Fast" : 0,
             "perl" : "5.008001"
          }
       }

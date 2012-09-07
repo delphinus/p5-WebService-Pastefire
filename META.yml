@@ -20,8 +20,8 @@ no_index:
     - t
     - xt
 requires:
+  Class::Accessor::Fast: 0
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
-  repository: origin
 version: 0.01

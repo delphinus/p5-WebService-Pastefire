@@ -6,7 +6,7 @@ readme_markdown_from 'lib/WebService/Pastefire.pm';
 readme_pod_from 'lib/WebService/Pastefire.pm';
 githubmeta;
 
-# requires '';
+requires 'Class::Accessor::Fast';
 
 tests 't/*.t';
 author_tests 'xt';
