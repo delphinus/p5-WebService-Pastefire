@@ -24,6 +24,7 @@
       "build" : {
          "requires" : {
             "ExtUtils::MakeMaker" : "6.59",
+            "Sub::Uplevel" : "0",
             "Test::Exception" : "0",
             "Test::More" : "0"
          }

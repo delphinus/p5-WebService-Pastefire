@@ -10,6 +10,7 @@ requires 'Class::Accessor::Fast';
 requires 'LWP::Simple';
 requires 'LWP::Protocol::https';
 
+test_requires 'Sub::Uplevel';
 test_requires 'Test::Exception';
 
 tests 't/*.t';
