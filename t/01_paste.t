@@ -1,7 +1,11 @@
 use strict;
 use warnings;
 use Test::More;
+use Test::Exception;
 use WebService::Pastefire;
+
+throws_ok { WebService::Pastefire->new() }
+    qr/^please specify email & password.*/, 'die if without email & password';
 
 my $pf = new_ok 'WebService::Pastefire' => [
     username => 'someuser',

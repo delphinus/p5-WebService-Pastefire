@@ -15,7 +15,7 @@ our $VERSION = '0.01';
 
 sub new { my $class = shift; #{{{
     my $args = ref $_[0] ? $_[0] : +{@_};
-    croak 'please speciry email & pwd'
+    croak 'please specify email & password'
         unless defined $args->{username} && defined $args->{password};
 
     return $class->SUPER::new(+{
