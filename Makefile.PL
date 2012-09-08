@@ -6,7 +6,11 @@ readme_markdown_from 'lib/WebService/Pastefire.pm';
 readme_pod_from 'lib/WebService/Pastefire.pm';
 githubmeta;
 
-# requires '';
+requires 'Class::Accessor::Fast';
+requires 'LWP::Simple';
+requires 'LWP::Protocol::https';
+
+test_requires 'Test::Exception';
 
 tests 't/*.t';
 author_tests 'xt';
