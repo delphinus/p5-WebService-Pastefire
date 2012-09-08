@@ -8,3 +8,5 @@ __DATA__
 JINNOUCHI Yasushi
 delphinus@remora.cx
 WebService::Pastefire
+iOS
+username
