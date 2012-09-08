@@ -11,7 +11,7 @@ __PACKAGE__->mk_accessors(qw!
 use Carp;
 use LWP::Simple;
 use URI;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new { my $class = shift; #{{{
     my $args = ref $_[0] ? $_[0] : +{@_};
