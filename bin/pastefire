@@ -1,0 +1,53 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use Getopt::Long;
+use Pod::Usage;
+use WebService::Pastefire;
+
+my ($username, $password, $help);
+GetOptions(
+    'u|username=s' => \$username,
+    'p|password=s' => \$password,
+    'h|help' => \$help,
+);
+my $str = shift;
+
+if ($help || !defined $str) {
+    pod2usage(-verbose => 1);
+    exit;
+}
+
+my $pf = WebService::Pastefire->new(
+    username => $username,
+    password => $password,
+);
+$pf->paste($str);
+
+__DATA__
+
+=encoding UTF-8
+
+=head1 NAME
+
+pastefire - sample for module WebService::Pastefire
+
+=head1 SYNOPSIS
+
+sample [options] [string]
+
+=head1 OPTIONS
+
+=over 4
+
+=item B<-u, --username>
+
+=item B<-p, --password>
+
+=back
+
+=head1 DESCRIPTION
+
+This script is a sample for L<WebService::Pastefire>.
+
+=cut
